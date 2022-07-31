@@ -5,7 +5,7 @@
 ## Description
 Have you heard the new trending game? [GUESS THE POKEMON](http://litctf.live:31772/)!!! Please come try out our vast database of pokemons.
 
-<https://drive.google.com/uc?export=download&id=1_NkoqdEGrYelVcKjVOVOJ0GmlBMxyXUs>
+[guess-the-pokemon.zip](https://drive.google.com/uc?export=download&id=1_NkoqdEGrYelVcKjVOVOJ0GmlBMxyXUs)
 
 ## Solution
 In the zipfile, in `main.py`, a database is initialized with the flag being stored in the `pokemon` table as its only entry.
