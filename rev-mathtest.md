@@ -5,7 +5,7 @@
 ## Description
 this math test is hard
 
-<https://drive.google.com/uc?export=download&id=1jGE3v40Xk3-Fq2GsnGvwzU8prZEoL3Iz>
+[math](https://drive.google.com/uc?export=download&id=1jGE3v40Xk3-Fq2GsnGvwzU8prZEoL3Iz)
 
 ## Solution
 Opening the binary in Ghidra, the main function appears to print 10 questions, read the user answers, and then call the `grade_test` function.
