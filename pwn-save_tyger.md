@@ -10,7 +10,7 @@ Connect with `nc litctf.live 31786`
 [save_tyger.zip](https://drive.google.com/uc?export=download&id=1ePTPwUBKcNLESM2ev1IZEb3kL4SeTcn1)
 
 ## Solution
-In `save_tyger.c`, we can ee that the objective is to overwrite `pass` with `0xabadaaab`.
+In `save_tyger.c`, we can see that the objective is to overwrite `pass` with `0xabadaaab`.
 
 Because pass is located above buf in the program, its location in memory will be right after buf.
 
