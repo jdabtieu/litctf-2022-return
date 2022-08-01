@@ -8,7 +8,7 @@ Enter the flag, and it will be checked with addition!
 [addition](https://drive.google.com/uc?export=download&id=1hRfIzZrNdkjxLpUtnc_8uwyd2jYpOvhV)
 
 ## Solution
-Opening thet file in Ghidra, we can see that it is stripped. Not an issue though, and after some cleaning up, a fairly readable main function emerges.
+Opening the file in Ghidra, we can see that it is stripped. Not an issue though, and after some cleaning up, a fairly readable main function emerges.
 
 ![](https://cdn.discordapp.com/attachments/359503958601105418/1003398229758578708/unknown.png)
 
@@ -16,7 +16,7 @@ There are two key arrays, and to check if the input is correct, it treats the ma
 
 Instead of trying to figure out the values ourselves, we can run the program in GDB and pause right before each comparison to see what the current letter of the flag should be.
 
-The binary is stripped, so we'll have to slowly find out way to main. Run `starti` and then keep running `ni` until the current instruction is `call   QWORD PTR [rip+0x2ea6]`. The guessed argument contains the address of main.
+The binary is stripped, so we'll have to slowly find our way to main. Run `starti` and then keep running `ni` until the current instruction is `call   QWORD PTR [rip+0x2ea6]`. The guessed argument contains the address of main. The next instruction to be run is `si`, to step into main.
 
 ![](https://cdn.discordapp.com/attachments/359503958601105418/1003403818014359783/unknown.png)
 
