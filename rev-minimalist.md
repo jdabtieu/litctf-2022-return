@@ -12,7 +12,7 @@ Opening the binary in Ghidra, it's immediately obvious that it's stripped. Clean
 
 ![](https://user-images.githubusercontent.com/62577178/182051971-aa5e861f-5da1-4961-a2c2-33529265e85f.png)
 
-For some reason Ghidra is not recognizing stack variable correctly, but essentially, this is what happens:
+For some reason Ghidra is not recognizing stack variables correctly, but essentially, this is what happens:
 1. reads a char
 2. if it's the 0-th char, we push it onto the stack
 3. grab the i-th value of the "key1" array and push it onto the stack
@@ -63,7 +63,7 @@ There is one last thing to check though: what happens with the stack?
 Running though the `POP` and `PUSH` instructions, we can see that:
 1. current char is popped off the stack
 2. current key2 is popped off the stack
-3. current key1 is poppsed off the stack
+3. current key1 is popped off the stack
 4. previous char is popped off the stack
 5. current char is restored to the stack
 6. every other `PUSH`/`POP` is balanced.
