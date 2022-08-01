@@ -17,7 +17,7 @@ SELECT * FROM pokemon WHERE names=[USER INPUT]
 
 If this query matches at least one entry, the page says that we are correct and returns the flag.
 
-Looking at the query, there is no escaping of user input, so we can just inject an expresion such that the `WHERE` clause will always be true, matching the flag.
+Looking at the query, there is no escaping of user input, so we can just inject an expression such that the `WHERE` clause will always be true, matching the flag.
 
 To do this, we can send `1 or 1=1` as the input, resulting in this SQL query:
 ```sql
