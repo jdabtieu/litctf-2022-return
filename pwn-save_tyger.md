@@ -1,6 +1,6 @@
 # save_tyger
 ![](https://img.shields.io/badge/category-pwn-blue)
-![](https://img.shields.io/badge/solves-166-orange)
+![](https://img.shields.io/badge/solves-145-orange)
 
 ## Description
 Can you save our one and only Tyger?
