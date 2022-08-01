@@ -8,7 +8,7 @@ Hi guys! I just learned sqlite3 build my own websiteeee. Come visit my [my websi
 ## Solution
 Checking out the website, it's just a simple text input. The question does mention sqlite3, suggesting a SQL injection attack.
 
-Indeed, trying the inputs `a` and `a' or 1=1--` trigger different results.
+Indeed, the inputs `a` and `a' or 1=1--` trigger different results.
 
 ![image](https://user-images.githubusercontent.com/62577178/182046557-06d15999-7743-4fa8-97dd-33cb8516f6c5.png)
 ![image](https://user-images.githubusercontent.com/62577178/182046550-411e6222-e7eb-4f56-ad98-fd5a0f217e0e.png)
