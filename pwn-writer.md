@@ -179,7 +179,7 @@ rop += p64(LIBC_BASE + 0x11b970) # mprotect(0x00404000, 0x1000, READ | WRITE | E
 rop += p64(SHELLCODE_ADDR+9)
 ```
 
-With a typical rop chain, we can simply drop this onto the stack, but because there is not `ret`, but instaead, we hijack the `call`, we have to be careful that the stack is properly set up. I overwrite `exit` with the `pop rdi` gadget to be able to inspect the stack when it exits, making sure there is a smooth transition to the actual rop chain.
+With a typical rop chain, we can simply drop this onto the stack, but because there is no `ret`, we have to hijack the `call exit(0)` instead. Because of this, we have to be careful that the stack is properly set up. I overwrote `exit` with the `pop rdi` gadget to be able to inspect the stack when it exits, making sure there is a smooth transition to the actual rop chain.
 ```py
 log.info("writing rop chain")
 p.recvuntil(b'where?\n')
