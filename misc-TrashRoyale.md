@@ -30,7 +30,7 @@ The file icon was the signature PyInstaller logo, so I used [pyinstxtractor](htt
 
 ![](https://user-images.githubusercontent.com/62577178/182063604-08f87913-8d34-4d30-9363-dea389daea7f.png)
 
-It was obviously morse code because there were only two distinct sound effect lengths, a short and long one. Decoding the morse code revealed the flag.
+It was obviously morse code because there were only two distinct sound effect lengths, a short and a long one. Decoding the morse code revealed the flag.
 
 
 Flag: `LITCTF{H3H3H3H4WTHREECROWN}`
