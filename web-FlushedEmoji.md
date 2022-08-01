@@ -58,7 +58,7 @@ With `ls -l`:
 ```
 ok thank you for your info i have now sold your password ((b&#39;total 20\n-rw-rw-r-- 1 root root 1212 Jul 20 19:38 main.py\n-rw-r--r-- 1 root root   24 Jul 20 02:13 requirements.txt\n-rwxrwxr-x 1 root root  351 Jul 20 19:38 run.sh\ndrwxrwxr-x 2 root root 4096 Jul 20 02:09 static\ndrwxrwxr-x 2 root root 4096 Jul 20 02:26 templates\n&#39;, None)) for 2 donuts :)
 ```
-Looks like `main.py` is in our current directory. For the challenge to actually work, it must conatin the uncensored IP.
+Looks like `main.py` is in our current directory. For the challenge to actually work, it must contain the uncensored IP.
 
 With `cat main.py`:
 ```
